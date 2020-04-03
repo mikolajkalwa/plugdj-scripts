@@ -2,48 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bookmark buttons</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-    <style>
-        html,
-        body {
-            margin: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookmark buttons</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-    <section class="hero is-fullheight has-background-dark">
-        <div class="hero-body">
-            <div class="container">
-                <div class="content is-large is-centered has-text-light has-text-centered">
-                    <p>Drag the buttons into bookmarks bar.</p>
-                </div>
-                <div class="buttons is-centered">
-                    <a class="button is-large" onclick="wrongUsage();" href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/ban.js')})();">Ban</a>
-                    <a class="button is-large" onclick="wrongUsage();" href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/waitlistBan.js')})();">Waitlist
-                        Ban</a>
-                    <a class="button is-large" onclick="wrongUsage();" href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/unbanAll.js')})();">Unban
-                        All</a>
-                    <a class="button is-large" onclick="wrongUsage();" href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/updateStaff.js')})();">Update
-                        Staff</a>
-                    <a class="button is-large" onclick="wrongUsage();" href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/getChatHistory.js')})();">Chat
-                        History</a>
-                </div>
-            </div>
+  <section class="hero is-fullheight has-background-dark">
+    <div class="hero-body">
+      <div class="container">
+        <div class="content is-large is-centered has-text-light has-text-centered">
+          <p>Drag the buttons into bookmarks bar.</p>
         </div>
-    </section>
+        <div class="buttons is-centered">
+          <a class="button is-large" onclick="wrongUsage();"
+            href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/ban.js')})();">Ban</a>
+          <a class="button is-large" onclick="wrongUsage();"
+            href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/waitlistBan.js')})();">Waitlist
+            Ban</a>
+          <a class="button is-large" onclick="wrongUsage();"
+            href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/unbanAll.js')})();">Unban
+            All</a>
+          <a class="button is-large" onclick="wrongUsage();"
+            href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/updateStaff.js')})();">Update
+            Staff</a>
+          <a class="button is-large" onclick="wrongUsage();"
+            href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/getChatHistory.js')})();">Chat
+            History</a>
+          <a class="button is-large" onclick="wrongUsage();"
+            href="javascript:(function(){$.getScript('https://cdn.jsdelivr.net/gh/MikolajKalwa/plugdj-scripts/downloadChat.js')})();">Export
+            chat to TXT</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        function wrongUsage() {
-            alert("Drag this button into your bookmarks bar!")
-        }
-    </script>
+  <script>
+    function wrongUsage() {
+      alert("Drag this button into your bookmarks bar!")
+    }
+  </script>
 </body>
 
 </html>
